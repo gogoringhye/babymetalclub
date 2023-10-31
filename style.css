@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* 화면을 줄였을 때 좌우로 가운데 맞춤 */
+
+h2 {
+    font-weight: bold;
+    color: #141e30;
+    margin-bottom: 20px;
+}
+
+.timeline-section {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.timeline-section .card {
+    position: relative;
+    max-width: 400px;
+}
+
+/* .timeline-section .card:nth-child(2n)//짝수
+.timeline-section .card:nth-child(2n+1)//홀수 */
+.timeline-section .card:nth-child(odd) {
+    /* //홀수 */
+    padding: 30px 0 30px 30px;
+}
+
+.timeline-section .card:nth-child(even) {
+    /* //짝수 */
+    padding: 30px 30px 30px 0;
+}
+
+.timeline-section .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: 2px solid orangered;
+}
+
+.timeline-section .card:nth-child(odd)::before {
+    left: 0;
+    top: -5px;
+    bottom: -4.4px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+.timeline-section .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.timeline-section .card:first-child::before {
+    border-top: 0;
+    border-bottom-left-radius: 0;
+}
+
+.timeline-section .card:last-child::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.timeline-section .card .info {
+    background-color: #141e30;
+    background-image: linear-gradient(to right, #365374, #141e30);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.timeline-section .card .info .title {
+    position: relative;
+    color: orangered;
+    padding-bottom: 10px;
+}
+
+.timeline-section .card .info .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid orangered;
+}
+
+
+.timeline-section .card:nth-child(even) .info .title {
+    text-align: right;
+}
+
+.timeline-section .card:nth-child(even) .info .title::before {
+    right: -45px;
+}
+
+.timeline-section .card:nth-child(odd) .info .title::before {
+    left: -45px;
+}
