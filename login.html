@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: 'GentleMonster';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://www.gentlemonster.com/kr/assets/fonts/GM/GentleMonsterSerif-Regular.woff2") format("woff2"), url("https://www.gentlemonster.com/kr/assets/fonts/GM/GentleMonsterSerif-Regular.woff") format("woff");
+        }
+
+        @font-face {
+            font-family: "Unica77LLWeb";
+            src: url("https://www.gentlemonster.com/kr/assets/fonts/EN/Unica77LLWeb-Regular.woff2") format("woff2"),
+                url("https://www.gentlemonster.com/kr/assets/fonts/EN/Unica77LLWeb-Regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "SDGothicNeo";
+            src: url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff2") format("woff2"),
+                url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f6f7;
+        }
+
+        #content {
+            width: 450px;
+            margin: 0 auto;
+            font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
+        }
+
+        /* header */
+        #header {
+            text-align: center;
+            padding: 62px 0 20px;
+        }
+
+        #header img {
+            width: 240px;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        /* 입력폼 */
+        input {
+            outline: none;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 19px 0 8px;
+        }
+
+        .box {
+            position: relative;
+            width: 100%;
+            height: 51px;
+            border: 1px solid #dadada;
+            background-color: #fff;
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .box.int_id {
+            padding-right: 100px;
+        }
+
+        .int {
+            display: block;
+            width: 100%;
+            height: 29px;
+            border: none;
+            font-size: 15px;
+            background-color: #fff;
+        }
+
+        .step_url {
+            position: absolute;
+            right: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8e8e8e;
+            font-size: 15px;
+        }
+
+        .passwdImg {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 20px;
+        }
+
+        /* 에러 메세지 */
+        .error_next_box {
+            display: none;
+            color: red;
+            margin-top: 9px;
+            font-size: 12px;
+        }
+
+        #alertTxt {
+            display: none;
+            color: red;
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+        }
+
+        /* 버튼 */
+        .btn_area {
+            margin: 30px 0 91px;
+        }
+
+        .btn_area #btnJoin1,
+        #btnJoin2,
+        #btnJoin3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5vw;
+            width: 100%;
+            border: none;
+            font-size: 0.7vw;
+            font-weight: 600;
+            font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+
+        #btnJoin1 {
+            background: #222;
+            color: #fff;
+            margin-bottom: 2vw;
+        }
+
+        #btnJoin2 {
+            margin-bottom: 2vw;
+            background-color: #f7e14c;
+        }
+
+        #btnJoin3 {
+            border: 1px solid #222;
+            background-color: transparent;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <a href="#">
+          베이비메탈클럽
+        </a>
+    </div>
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- id -->
+            <div>
+                <h3 class="join_title">
+                    <label for="id">이메일</label>
+                </h3>
+                <span class="box int_id">
+                    <input type="text" id="id" class="int" maxlength="20">
+                    <span class="step_url">@babymetalclub.com</span>
+                </span>
+                <span class="error_next_box el">에러출력</span>
+            </div>
+            <!-- //id -->
+
+            <!-- pw1 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="psw1">비밀번호</label>
+                </h3>
+                <span class="box int_pass">
+                    <input type="text" id="psw1" class="int" maxlength="16">
+                    <!-- for, id 짝지/비밀번호 16글자 이상 X -->
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_pass.png" alt="비밀번호" id="pswd1_img1" class="passwdImg">
+                </span>
+                <span class="error_next_box e2">에러출력</span>
+            </div>
+            <!-- //pw1 -->
+
+            <!-- pw2 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="psw2">재확인</label>
+                </h3>
+                <span class="box int_pass_check">
+                    <input type="text" id="psw2" class="int" maxlength="16">
+                    <!-- for, id 짝지/비밀번호 16글자 이상 X -->
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_check_disable.png" alt="비밀번호" id="pswd2_img1" class="passwdImg">
+                </span>
+                <span class="error_next_box e3">에러출력</span>
+            </div>
+            <!-- //pw2 -->
+
+            <!-- 버튼    -->
+            <div class="btn_area">
+                <button type="button" id="btnJoin1">
+                    <span>로그인</span>
+                </button>
+                <button type="button" id="btnJoin2">
+                    <a href="#"><img src="img/bold/kakao.svg" alt=""></a>
+                    <span>카카오 로그인</span>
+                </button>
+                <button type="button" id="btnJoin3">
+                    <a href="#">
+                        <svg width="31px" height="38px" viewBox="0 0 31 38" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Left-Black-Logo-Medium" stroke="none" stroke-width="1" fill="none"
+                                fill-rule="evenodd">
+                                <rect id="Rectangle" fill="transparent" x="0" y="0" width="31" height="44"></rect>
+                                <path
+                                    d="M15.7099491,14.8846154 C16.5675461,14.8846154 17.642562,14.3048315 18.28274,13.5317864 C18.8625238,12.8312142 19.2852829,11.852829 19.2852829,10.8744437 C19.2852829,10.7415766 19.2732041,10.6087095 19.2490464,10.5 C18.2948188,10.5362365 17.1473299,11.140178 16.4588366,11.9494596 C15.9152893,12.56548 15.4200572,13.5317864 15.4200572,14.5222505 C15.4200572,14.6671964 15.4442149,14.8121424 15.4562937,14.8604577 C15.5166879,14.8725366 15.6133185,14.8846154 15.7099491,14.8846154 Z M12.6902416,29.5 C13.8618881,29.5 14.3812778,28.714876 15.8428163,28.714876 C17.3285124,28.714876 17.6546408,29.4758423 18.9591545,29.4758423 C20.2395105,29.4758423 21.0971074,28.292117 21.9063891,27.1325493 C22.8123013,25.8038779 23.1867451,24.4993643 23.2109027,24.4389701 C23.1263509,24.4148125 20.6743484,23.4122695 20.6743484,20.5979021 C20.6743484,18.1579784 22.6069612,17.0588048 22.7156707,16.974253 C21.4353147,15.1382708 19.490623,15.0899555 18.9591545,15.0899555 C17.5217737,15.0899555 16.3501271,15.9596313 15.6133185,15.9596313 C14.8161157,15.9596313 13.7652575,15.1382708 12.521138,15.1382708 C10.1536872,15.1382708 7.75,17.0950413 7.75,20.7911634 C7.75,23.0861411 8.64383344,25.513986 9.74300699,27.0842339 C10.6851558,28.4129053 11.5065162,29.5 12.6902416,29.5 Z"
+                                    id="" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <span>APPLE 로그인</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let id = document.querySelector('#id');
+        let error = document.querySelectorAll('.error_next_box');
+
+        let pw1 = document.querySelector('#psw1');
+        let pwImg1 = document.querySelector('#pswd1_img1');
+        let pwMsg = document.querySelector('#alertTxt');
+
+        let pw2 = document.querySelector('#psw2');
+        let pwImg2 = document.querySelector('#pswd2_img1');
+
+        let username = document.querySelector('#name');
+
+
+        id.addEventListener('focusout', checkId)
+        pw1.addEventListener('focusout', checkPw)
+        pw2.addEventListener('focusout', comparePw)
+        username.addEventListener('focusout', checkName)
+
+
+        function checkId() {
+            var idPattern = /^[a-zA-Z0-9_-]{5,20}$/;
+            //console.log(idPattern.test(id.value))
+            if (id.value === "") {
+                error[0].innerHTML = "필수 정보입니다.";
+                error[0].style.display = "block";
+                error[0].style.color = "#f00";
+            } else if (!idPattern.test(id.value)) {
+                error[0].innerHTML = "5~20자의 영문 소문자, 대문자, 숫자와 특수기호(_),(-)만 사용가능합니다.";
+                error[0].style.display = "block";
+            } else {
+                error[0].innerHTML = "멋진 아이디네요.";
+                error[0].style.display = "block";
+                error[0].style.color = "#80a600";
+            }
+        }
+
+        function checkPw() {
+            let pwPattern = /^[a-zA-Z0-9~!@#$%^&*()_+|<>?:{}]{8,16}$/;
+            console.log(pwPattern.test(pw1.value))
+            if (pw1.value === "") {
+                error[1].innerHTML = "필수 정보입니다.";
+                error[1].style.display = "block";
+                pwImg1.src = "img/m_icon_not_use.png";
+                pwMsg.style.display = "none";
+
+            } else if (!pwPattern.test(pw1.value)) {
+                error[1].innerHTML = "8~16자 영문, 대소문자, 숫자, 특수문자를 사용하세요";
+                error[1].style.display = "block";
+                pwMsg.style.display = "block";
+                pwImg1.src = "img/m_icon_not_use.png";
+                pwMsg.innerHTML = "사용불가";
+                pwMsg.style.color = "#f00";
+            } else {
+                error[1].style.display = "none";
+                pwMsg.innerHTML = "안전";
+                pwMsg.style.display = "block";
+                pwMsg.style.color = "#03c75a";
+                pwImg1.src = "img/m_icon_safe.png";
+            }
+        }
+
+        function comparePw() {
+            if (pw1.value === pw2.value && pw2.value !== "") {
+                pwImg2.src = "img/m_icon_check_enable.png";
+                error[2].style.display = "none";
+
+            } else if (pw1.value !== pw2.value) {
+                pwImg2.src = "img/m_icon_check_disable.png";
+                error[2].style.display = "block";
+                error[2].innerHTML = "비밀먼호가 일치하지 않습니다.";
+            }
+
+            if (pw2.value == "") {
+                error[2].style.display = "block";
+                error[2].innerHTML = "필수 정보입니다.";
+            }
+        }
+
+        function checkName() {
+            let namePattern = /^[a-zA-Z가-힣]*$/;
+            //console.log(namePattern.test(username.value))
+            if (username.value == "") {
+                error[3].style.display = "block";
+                error[3].innerHTML = "필수 정보입니다.";
+            } else if (!namePattern.test(username.value) || username.value.indexOf(" ") > -1) {
+                error[3].style.display = "block";
+                error[3].innerHTML = "한글과 영문 대소문자를 이용하세요(특수기호, 공백 사용 불가)";
+
+            } else {
+                error[3].style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
