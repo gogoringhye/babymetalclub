@@ -1,46 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babymetalclub</title>
+  <link rel="shortcut icon"
+    href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc1Nzc3Nzc3Kzc3NTc3Nys3Nzc3NTc4Nzc3Lf/AABEIABwAHAMBIgACEQEDEQH/xAAYAAEAAwEAAAAAAAAAAAAAAAAGAgUHA//EACkQAAICAQMEAQMFAQAAAAAAAAECAxEEBRIhABMiMVEGMmEUFUFicSP/xAAYAQACAwAAAAAAAAAAAAAAAAAAAgEDBP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAESExAv/aAAwDAQACEQMRAD8ACtkTlHXG72nFUnMsBaYyzFowNzWACdwbkkXXqwbPZ2Qs8pYkhTGqvEihPXyANosgtf8AbrQ9GwJcjVsFMzOSYwMX/UtL3hEUFrZZr2vu3A2eHqhQPVsmdkYuXJOximaYPkp2oJJFZYzQGwkAvwfXIFewD1n87rmCaTHJj5bwoJjnDIXsFFWMiQBnF7wSdxC3VXQFnpjjLpz4kP762r4mYFIb9sTZFL5E7isYID2SrflT1LLkycrQ2iXvyiJEyWxIojLICWcAUCTYLAn7bFfb1ZfSEmd+gnfRsw5eM8974V2eQRR5IwXaxoNQFeXHvpXU3YSowMPITOxsdmxOXeDKjiJCUSqpKoY1tLeufQv5jDrSeck+HEY6yHDyZF7N1DYfC221YoVTNxfPVzqGhYz4cGoGWbugTrt8dpuSR+Rt5G5ro8ccg83n+bliaLGc48S745WKgvQrgVbcDxHA6PKvIcHZtqOtYWtLjY0+C2DCubG8b7RNHMAXYAra+JDcexXwLrrpf1B9P6XhomqY648kwEkUcDSuO3W1SWDck7bv/OjeLkGHHlfHRYZUEaiRSxPH2miSARs4IF8n56b6fPJ2ixKEssRP/NR6iQfwPx1A5YTV/9k="
+    type="image/x-icon">
+  <!-- 폰트어썸-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="timeline-section">
-        <h2>Timeline</h2>
-        <div class="container">
-            <div class="card">
-                <div class="info">
-                    <h3 class="title">Title 1</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum vitae consequatur, similique doloremque labore accusamus aliquam ad libero dignissimos deserunt blanditiis quaerat eligendi consequuntur autem!</p>
-                </div>
-            </div><!-- card -->
-            <div class="card">
-                <div class="info">
-                    <h3 class="title">Title 2</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum vitae consequatur, similique doloremque labore accusamus aliquam ad libero dignissimos deserunt blanditiis quaerat eligendi consequuntur autem!</p>
-                </div>
-            </div><!-- card -->
-            <div class="card">
-                <div class="info">
-                    <h3 class="title">Title 3</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum vitae consequatur, similique doloremque labore accusamus aliquam ad libero dignissimos deserunt blanditiis quaerat eligendi consequuntur autem!</p>
-                </div>
-            </div><!-- card -->
-            <div class="card">
-                <div class="info">
-                    <h3 class="title">Title 4</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum vitae consequatur, similique doloremque labore accusamus aliquam ad libero dignissimos deserunt blanditiis quaerat eligendi consequuntur autem!</p>
-                </div>
-            </div><!-- card -->
-            <div class="card">
-                <div class="info">
-                    <h3 class="title">Title 5</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum vitae consequatur, similique doloremque labore accusamus aliquam ad libero dignissimos deserunt blanditiis quaerat eligendi consequuntur autem!</p>
-                </div>
-            </div><!-- card -->
+
+  <div id="wrap">
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <a href="#" class="nav-logo">Babymetalclub</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#l-main" class="nav-link">LOOKBOOK</a></li>
+            <li class="nav-item"><a href="#l-section" class="nav-link">SHOP
+              </a></li>
+          </ul>
         </div>
+
+        <div class="nav-actions">
+          <div class="nav-toggle" id="nav-toggle">
+            <img src="https://i.postimg.cc/zGFxhLRv/bx-chevron-down.png" alt="logo">
+          </div>
+          <a href="login.html" class="nav-btn">LOG☆IN</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/6/4/LzLn8tVkSimeRRA-rji7nA" alt="home image"
+          class="home_img" />
+        <div class="home_data">
+          <h1 class="home_title">
+            ブランド
+            <div>
+              <img src="img/home-sushi-title.png" alt="sushi title" />
+              世界的な流通
+            </div>
+          </h1>
+          <p class="home_description">
+            透明でありながら、それを求める彼らはただ沸騰しているだけだ。私たちの青春の遊びが花開き、水車のように交響楽が響き渡る。<br>
+            歓楽の花が枝に耳を傾け、風が道を示すのは実現への春風だ。持っているものがあり、時には十分に実現することができる。<br>
+            オーケストラのように、与えるのは歴史が熱いからだ。これこそ平和であり、花がどれほど美しいかを示すものだ。<br>
+          </p>
+          <a href="#" class="button">
+            Order Now <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+      <img src="img/leaf-branch-2.png" alt="leaf-branch-2" class="home_leaf-1" />
+      <img src="img/leaf-branch-4.png" alt="leaf-branch-4" class="home_leaf-2" />
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about_container container grid">
+
+        <div class="about_data">
+          <span class="section_subtitle">新商品登場！</span>
+          <h2 class="section_title about_title">
+            <div>
+              ギャル力アップ！
+              <img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/6/4/LzLn8tVkSimeRRA-rji7nA" alt="about-sushi" />
+            </div>
+            「個性派アイテムをお届け」
+          </h2>
+          <p class="about_description">
+            ギャル力アップ！レオパード×レースの個性派デザイン<br>
+            レオパード柄とレースが絶妙に組み合わさり、ギャルスタイルにぴったりなデザインです。<br><br>
+
+            どんなコーデにもぴったり！<br>
+            2色展開で、どんなコーディネートにもアクセントを加えます。<br><br>
+
+            品切れ間近！お早めにゲット<br>
+            華やかで力強さを感じさせるバッグ。<br>
+            人気アイテムなので、今すぐチェック！<br>
+          </p>
+          <!-- about_data -->
+          <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700894460413_2500.jpg"
+            alt="about_img" class="about_img" />
+
+        </div>
+
+
+        <!-- 슬라이드 -->
+        <section class="slider-container">
+          <h1 class="title-of-slider"> Bmc レース レオパード <span class="bolden"> スタッズ バッグ - 2色
+            </span>
+          </h1>
+          <div id="image-container">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893649634_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893132325_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893143310_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893170722_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893666848_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+            <img class="model-images"
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700893182143_1000.jpg"
+              alt="Bmc lace leopard studs bag">
+          </div>
+          <div class="button-container">
+            <button class="direction-button" id="left-arrow"><svg fill="#fff" height="800px" width="800px" version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_92_"
+                  d="M111.213,165.004L250.607,25.607c5.858-5.858,5.858-15.355,0-21.213c-5.858-5.858-15.355-5.858-21.213,0.001
+          l-150,150.004C76.58,157.211,75,161.026,75,165.004c0,3.979,1.581,7.794,4.394,10.607l150,149.996
+          C232.322,328.536,236.161,330,240,330s7.678-1.464,10.607-4.394c5.858-5.858,5.858-15.355,0-21.213L111.213,165.004z" />
+              </svg></button>
+
+            <span id="progress-bar-container"><span id="progress-bar"></span></span>
+
+            <button class="direction-button" id="right-arrow">
+              <svg fill="#fff" height="800px" width="800px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_92_"
+                  d="M111.213,165.004L250.607,25.607c5.858-5.858,5.858-15.355,0-21.213c-5.858-5.858-15.355-5.858-21.213,0.001
+                          l-150,150.004C76.58,157.211,75,161.026,75,165.004c0,3.979,1.581,7.794,4.394,10.607l150,149.996
+                          C232.322,328.536,236.161,330,240,330s7.678-1.464,10.607-4.394c5.858-5.858,5.858-15.355,0-21.213L111.213,165.004z" />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <!-- //슬라이드 -->
+
+      </div>
+
+      <img src="img/leaf-branch-1.png" alt="about_leaf" class="about_leaf" />
+    </section>
+
+
+    <!-- 스크롤 슬라이드 -->
+    <div class="page">
+      <div class="noise"></div>
+      <div class="scrollsidebar">
+        <div class="scrollsidebar-item">
+          <p class="scrollinfo">ベビーメタルクラブ</p>
+          <p>
+            ドリーギャルズシリーズ登場！👑💖
+
+            ベビーメタルクラブの最新コレクション「ドリーギャルズ」絶対チェックしなきゃ！✨
+            まるで夢の世界から飛び出したみたいな可愛さが詰まってるの！💫このシリーズは、ピンクやパステルカラーで、超キュートなドールみたいなギャルスタイルが特徴だよ💕🎀
+          </p>
+          <p>
+            トップス💫
+            このシリーズのトップスは、ぴったりフィットするシルエットで可愛さMAX！🎀 パステルカラーやピンク、ホワイトをベースにしたデザインが超キュート！✨
+            そして、ホピーパターンが加わって、可愛さとカッコよさを同時に楽しめちゃう！🐾 レースやフリル、リボンがアクセントになっていて、まるでドールみたいな雰囲気が楽しめるよ！💖
+            甘すぎないけど、しっかりギャル感を出せる絶妙なバランスがポイント！👚 可愛い女の子たちに超オススメ！ 💖
+          </p>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1736656875218_1500.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275528216_1500.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275046505_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275034809_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275023218_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275073406_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275205449_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275413706_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275444039_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275471458_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275496022_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1718275185443_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/blogPost/image_1683695515023_1000.jpg"
+              alt="Dolly gals" />
+          </div>
+
+        </div>
+      </div>
     </div>
+    <!-- //스크롤 슬라이드 -->
+
+    <!-- best_optical -->
+    <section id="best_optical">
+      <div class="best_tit">
+        <h3>ホットな</h3>
+      </div>
+      <div class="container">
+        <div class="optical_best">
+
+          <div class="item">
+
+            <div class="cell">
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700891770306_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>Bear gal hood (pink camo)</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>160.00 USD</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1644818054976_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>Bear gal set up</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>210.98 USD</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div><!-- //cell1-->
+            <div class="cell">
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1683623673195_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>Studs choker t (black)</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>71.43 USD</li>
+                    </ul>
+                  </div>
+                </a>
+
+              </div>
+
+            </div><!-- //cell2-->
+            <div class="cell">
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1718276404162_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>jewel mini dress (white)</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>188.57 USD</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1683713709540_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>jewel mini dress (white)</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>106.67 USD</li>
+                    </ul>
+                  </div>
+                </a>
+
+              </div>
+            </div><!-- //cell3-->
+            <div class="cell">
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1700894258050_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>Galfriend slip (pink)</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>70.48 USD</li>
+                    </ul>
+                  </div>
+                </a>
+
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1611849053733_1000.jpg"
+                    alt="detail">
+                  <div class="item_info">
+                    <h3>Cotton candy velour set up</h3>
+                    <ul>
+                      <li>Shipping 20.00 USD</li>
+                      <li>120.95 USD</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div><!-- //cell4-->
+          </div><!-- //item -->
+
+          <div class="rank">
+            <h3>KEYWORD <br> RANKING</h3>
+            <h3 class="m_rank_h3">KEYWORD RANKING</h3>
+            <ul>
+              <li class="active">
+                <a href="#" class="rank_btn">
+                  <span>1</span>
+                  <span>크로</span>
+                  <span>더보기</span>
+                </a>
+                <div class="rank_item">
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_kro1.avif" alt="크로 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_kro2.avif" alt="크로 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_kro3.avif" alt="크로 상세이미지">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="rank_btn">
+                  <span>2</span>
+                  <span>YTT</span>
+                  <span>더보기</span>
+                </a>
+                <div class="rank_item">
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ytt1.avif" alt="Ytt 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ytt2.avif" alt="Ytt 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ytt3.avif" alt="Ytt 상세이미지">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="rank_btn">
+                  <span>3</span>
+                  <span>오조</span>
+                  <span>더보기</span>
+                </a>
+                <div class="rank_item">
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ojo1.avif" alt="오조 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ojo2.avif" alt="오조 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_ojo3.avif" alt="오조 상세이미지">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="rank_btn">
+                  <span>4</span>
+                  <span>마틴</span>
+                  <span>더보기</span>
+                </a>
+                <div class="rank_item">
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_martin1.avif" alt="마틴 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_martin2.avif" alt="마틴 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_martin3.avif" alt="마틴 상세이미지">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="rank_btn">
+                  <span>5</span>
+                  <span>아토믹</span>
+                  <span>더보기</span>
+                </a>
+                <div class="rank_item">
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_atomic1.avif" alt="아토믹 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_atomic2.avif" alt="아토믹 상세이미지">
+                  </a>
+                  <a href="#" class="rank_item_img">
+                    <img src="img/highschool/rank_atomic3.avif" alt="아토믹 상세이미지">
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- //rank -->
+        </div><!-- //optical_best -->
+        <div class="m_more_btn">
+          <span>View More</span>
+          <div class="m_arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.5 30">
+              <g id="circle" transform="translate(111.5)">
+                <circle class="st0" cx="15" cy="15" r="14.5" />
+                <circle class="st1" cx="15" cy="15" r="14.5" />
+              </g>
+              <path id="top" class="st1" d="M124.7 20.6l5.7-5.7-5.7-5.7" />
+              <path id="line" class="st1" d="M130 15h-130" />
+            </svg>
+          </div><!-- //m_arrow -->
+        </div><!-- //m_more_btn -->
+      </div><!-- //container -->
+      <img class="principall" src="img/highschool/principall.avif" alt="교장선생님">
+    </section>
+    <!-- //best_optical -->
+
+
+    <!-- gsap scrolltrigger gallery -->
+    <main class="flex">
+      <div class="herons">
+        <div class="herons__inner flex">
+          <!-- 1 -->
+          <div class="herons__col flex__col">
+            <div class="heron">
+              <img src="img/heronpreston/hp_1.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_2.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_3.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_4.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_5.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_6.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_7.jpg">
+            </div>
+          </div>
+          <!-- //1 -->
+          <!-- 2 -->
+          <div class="herons__col flex__col">
+            <div class="heron">
+              <img src="img/heronpreston/hp_8.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_9.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_10.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_11.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_12.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_1.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_2.jpg">
+            </div>
+          </div>
+          <!-- //2 -->
+          <!-- 3 -->
+          <div class="herons__col flex__col">
+            <div class="heron">
+              <img src="img/heronpreston/hp_3.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_4.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_5.jpg">
+            </div>
+            <div class="preston flex__col">
+              <!--   <img src="img/bold/heronpreston1_pc.webp"> -->
+              <!--          <h1>Gallery animation</h1>
+  <p>Animation with GSAP and ScrollTrigger.</p> -->
+              <div class="hpcard">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 546.3 306.5" style="enable-background:new 0 0 546.3 306.5;" xml:space="preserve">
+                  <g transform="translate(9.464 -1090.116)">
+                    <g transform="translate(42.537 1141.964)">
+                      <g transform="translate(0.883 41.093)">
+                        <path
+                          d="M406,88.9h12.3V78.3c-0.1-2.2-0.3-4.4-0.8-6.5h0.4l11.3,17.1h12.3V56.3h-12.3v9.8c0.1,2.8,0.5,5.6,1.1,8.3h-0.4l-11.5-18H406L406,88.9z M382.1,66.5c3.4-0.2,6.4,2.4,6.6,5.9c0,0.2,0,0.3,0,0.5c0,3.7-2.7,6.3-6.6,6.3s-6.6-2.6-6.6-6.3c-0.1-3.5,2.7-6.3,6.1-6.4C381.8,66.5,381.9,66.5,382.1,66.5 M382.1,55.8c-10.7,0-19.6,6.7-19.6,16.9c0,10.5,8.8,16.7,19.6,16.7s19.5-6.3,19.5-16.7C401.6,62.4,392.8,55.8,382.1,55.8 M333.4,66.9l7.1-0.3v22.3h12.8V66.6l7.1,0.3V56.3h-27L333.4,66.9z M302.9,86.4c4.3,1.9,8.9,2.9,13.6,3c7.6,0,15.3-3.8,15.3-11.6c0-5.5-3.9-8.2-9.4-9.3l-2.9-0.6c-1-0.2-2.6-0.4-2.6-1.6c0-1.3,1.6-1.7,2.8-1.7c2.7,0.1,5.3,1,7.5,2.5l3.5-8.3c-3.4-1.9-7.3-2.9-11.2-2.9c-7.7,0-15.3,4.3-15.3,12c0,5.1,4.2,7.8,9.2,8.6l2.6,0.4c1.2,0.2,2.9,0.3,2.9,1.8s-2,1.9-3.3,1.9c-2.9-0.1-5.7-1.2-8-3l-0.7-0.5L302.9,86.4z M275.3,88.9h24.1V80h-11.2v-3.2h9.9v-8.5h-9.9v-3.1h10.8v-8.9h-23.8L275.3,88.9zM252.6,65.2h1c2.2,0,4.1,0.3,4.1,2.8c0,2.4-2.1,2.7-4.2,2.7h-0.9V65.2z M240,88.9h12.6V78.4h0.2l5.6,10.4h14.8l-7.7-10.6c-0.6-0.8-1.3-1.4-2.2-1.9v-0.3c4.8-1.5,6.8-3.5,6.8-8.5c0-8.2-6.8-11.3-14.7-11.3H240L240,88.9z M218.3,65.2h1.2c2.1,0,4.7,0.1,4.7,2.7c0,2.6-2.4,3-4.7,3h-1.3L218.3,65.2z M205.9,88.9h12.4v-9.8h6.6c7.2,0,11.7-4.1,11.7-10.8c0-8.1-6.1-12-14.3-12h-16.3V88.9z M145.3,88.9h12.3V78.3c-0.1-2.2-0.3-4.4-0.8-6.5h0.4l11.3,17.1h12.3V56.3h-12.3v9.8c0.1,2.8,0.5,5.6,1.1,8.3h-0.4l-11.5-18h-12.3L145.3,88.9z M121.4,66.5c3.4-0.2,6.4,2.4,6.6,5.9c0,0.2,0,0.3,0,0.5c0,3.7-2.7,6.3-6.6,6.3s-6.6-2.6-6.6-6.3c-0.1-3.5,2.7-6.3,6.1-6.4C121.1,66.5,121.3,66.5,121.4,66.5 M121.4,55.8c-10.7,0-19.6,6.7-19.6,16.9c0,10.5,8.8,16.7,19.6,16.7S141,83.1,141,72.7C141,62.4,132.2,55.8,121.4,55.8 M80.2,65.2h1c2.2,0,4.1,0.3,4.1,2.8c0,2.4-2.1,2.7-4.2,2.7h-0.9L80.2,65.2z M67.6,88.9h12.6V78.4h0.2l5.6,10.4h14.8l-7.7-10.6c-0.6-0.8-1.3-1.4-2.2-1.9v-0.3c4.8-1.5,6.8-3.5,6.8-8.5c0-8.2-6.8-11.3-14.7-11.3H67.6L67.6,88.9z M38.2,88.9h24.1V80H51.1v-3.2H61v-8.5h-9.9v-3.1H62v-8.9H38.2L38.2,88.9z M0,88.9h12.4V77.6h7.9v11.3h12.4V56.3H20.3v11h-7.9v-11H0L0,88.9z">
+                        </path>
+                        <g transform="translate(0.001)">
+                          <path
+                            d="M19.3,14.1v-3.2c0-3.5-1.5-5-5.7-5c-4.2,0-5.6,1.5-5.6,5v20.5c0,3.5,1.4,5,5.6,5c4,0,5.8-2.6,5.8-6.7v-4.8h-6.7v-5.8h14.7v22.5h-6.9v-3.2c-1.3,1.8-3.7,3.9-9.3,3.9C4,42.3,0,39.4,0,29.9v-17C0,3.4,5.5,0,13.7,0c8.1,0,13.6,3.7,13.6,11v3.1L19.3,14.1z">
+                          </path>
+                          <path d="M59,0.8v6H43.2v10.3h14.3v6H43.2v12.5H59v6H35.2V0.8L59,0.8z"></path>
+                          <path d="M94.9,0.8v40.8h-9.8L74.4,10.4v31.1h-8V0.8h9.8l10.7,30.9V0.8H94.9z"></path>
+                          <path d="M128,0.8v6h-10v34.7h-8V6.8h-10v-6H128z"></path>
+                          <path d="M141.1,35.5h15.7v6h-23.7V0.8h8L141.1,35.5z"></path>
+                          <path d="M185.7,0.8v6h-15.9v10.3h14.3v6h-14.3v12.5h15.9v6h-23.8V0.8L185.7,0.8z"></path>
+                          <path
+                            d="M241.8,0.8v40.8h-8V10.2l-6.8,31.3h-6.3L214,10.1v31.5h-8V0.8h11.2l6.7,31.1l6.7-31.1H241.8z">
+                          </path>
+                          <path
+                            d="M276.8,13.3V29c0,10-4.8,13.3-13.6,13.3S249.6,39,249.6,29V13.3c0-10,4.8-13.3,13.6-13.3S276.8,3.4,276.8,13.3 M268.8,11.4c0-4.2-1.5-5.5-5.6-5.5s-5.6,1.2-5.6,5.5V31c0,4.2,1.5,5.4,5.6,5.4s5.6-1.2,5.6-5.4V11.4z">
+                          </path>
+                          <path d="M313.1,0.8v40.8h-9.8l-10.7-31.1v31.1h-8V0.8h9.8l10.7,30.9V0.8H313.1z"></path>
+                          <path
+                            d="M346,10.3v2.4h-8v-2c0-3.4-0.5-4.9-4.4-4.9c-3.8,0-4.4,1.5-4.4,4.3c0,2.3,0.5,3.4,2.8,4.8l7.8,5c4.3,2.8,6.7,4.4,6.7,11.6c0,7.3-4.7,10.7-12.5,10.7c-9.3,0-13.1-3.3-13.1-10.7v-3.4h8v3c0,4.3,1.4,5.3,5.1,5.3s4.5-1.7,4.5-4.6s-0.5-4-3.2-5.9l-7.6-5.2c-4.7-3.2-6.5-4.7-6.5-10.7c0-5.1,2.9-10.1,12.4-10.1C342.8,0.1,346,4.2,346,10.3">
+                          </path>
+                          <path d="M378,0.8v6h-10v34.7h-8V6.8h-10v-6H378z"></path>
+                          <path d="M406.9,0.8v6H391v10.3h14.3v6H391v12.5h15.9v6h-23.8V0.8L406.9,0.8z"></path>
+                          <path
+                            d="M439.9,27.8v8.8c-0.1,1.8,0.4,3.6,1.5,5h-8.3c-0.8-1.5-1.3-3.2-1.2-4.9v-8.8c0-3.3-1.3-4.3-4.2-4.3h-5.6v18h-8V0.8h14.6c10.6,0,12,5.7,12,11.4c0,4.6-2.4,7.8-8.2,8.7C437.5,21.2,439.9,23.8,439.9,27.8 M427.7,17.5c4.3,0,5.1-1.9,5.1-5.3s-0.6-5.3-4.9-5.3h-5.6v10.7L427.7,17.5z">
+                          </path>
+                        </g>
+                      </g>
+                      <path
+                        d="M5.3,4.4v1.4h1.8c0,1.1-0.9,1.9-1.9,1.9c-1.6,0-2.4-1.6-2.4-3s0.8-3,2.4-3C6,1.6,6.8,2.2,7.1,3l1.5-0.8C8,0.9,6.6,0.1,5.2,0.2c-2.3,0-4.2,2-4.2,4.3c0,0.1,0,0.1,0,0.2C0.9,6.9,2.7,8.9,5,9.1c0.1,0,0.1,0,0.2,0C7.8,9.1,9,7,9,4.6V4.4
+            H5.3z M17.5,8.9h1.7l-1.3-8.7h-1.2l-2,5.6l-2.1-5.6h-1.2L10,8.9h1.7l0.8-5.3h0L14.3,9h0.6l1.9-5.4h0L17.5,8.9z M22.2,3.7V0.4h-1.7v8.5h1.7V5.1h3.1v3.8h1.7V0.4h-1.7v3.3H22.2z M30.4,5.7h0.8c1.3,0.2,2.5-0.7,2.7-2.1c0-0.2,0-0.4,0-0.6c0-1.9-1.2-2.6-2.9-2.6h-2.3v8.5h1.7L30.4,5.7z M30.4,1.8h0.3c0.9,0,1.6,0.2,1.6,1.2s-0.5,1.3-1.5,1.3h-0.3V1.8z M40.9,5.2h0.3c0.8,0,1.7,0,1.7,1.1s-0.8,1.2-1.7,1.2h-0.3L40.9,5.2z M39.2,8.9h2.6c1.5,0,2.7-0.7,2.7-2.4c0.1-1-0.5-1.9-1.5-2.1c0.5-0.4,0.8-1,0.7-1.6c0-1.7-1-2.3-2.5-2.3h-2.1V8.9z M40.9,1.7h0.2c0.7,0,1.2,0.2,1.2,1.1s-0.4,1.1-1.2,1.1h-0.2L40.9,1.7z M47.8,0.4h-1.7v8.5h1.7L47.8,0.4z M57.6,4.6c0.1-2.3-1.6-4.3-3.9-4.5s-4.3,1.6-4.5,3.9c0,0.2,0,0.3,0,0.5c-0.2,2.3,1.6,4.3,3.9,4.5c2.3,0.2,4.3-1.6,4.5-3.9C57.6,5,57.6,4.8,57.6,4.6z M55.9,4.5c0,1.3-0.7,2.9-2.5,2.9s-2.5-1.6-2.5-2.9c-0.1-1.4,0.9-2.6,2.2-2.7c1.4-0.1,2.6,0.9,2.7,2.2C55.9,4.2,55.9,4.4,55.9,4.5L55.9,4.5z M59,8.9h1.7V3.1h0L65.2,9h1.2V0.4h-1.7v5.7h0l-4.5-5.9H59V8.9zM69.9,0.4h-1.7v8.5h1.7L69.9,0.4z M77.4,0.6c-0.6-0.3-1.2-0.5-1.9-0.5c-2.4,0.1-4.3,2.1-4.2,4.4c0,0,0,0.1,0,0.1c-0.1,2.4,1.8,4.3,4.2,4.4c0.7,0,1.3-0.2,1.9-0.5v-2c-0.5,0.6-1.2,0.9-1.9,0.9c-1.5-0.1-2.6-1.4-2.5-2.8c0,0,0,0,0,0c-0.1-1.5,1-2.8,2.4-2.9c0,0,0,0,0.1,0c0.7,0,1.4,0.3,1.9,0.9L77.4,0.6z M83.9,1.1c-0.6-0.6-1.5-0.9-2.3-0.9c-1.4,0-2.5,1.1-2.5,2.5c0,0,0,0,0,0.1C79.1,4,79.9,4.6,81,5c0.7,0.3,1.5,0.5,1.5,1.4c0.1,0.6-0.4,1.2-1,1.2c0,0,0,0-0.1,0c-0.7-0.1-1.3-0.5-1.5-1.2l-1.1,1c0.5,1,1.5,1.6,2.6,1.7c1.5,0.1,2.7-1.1,2.8-2.6c0-0.1,0-0.2,0-0.3c0-2.8-3.4-2.3-3.4-3.7c0-0.5,0.5-1,1-1c0.5,0,1,0.3,1.3,0.7L83.9,1.1z">
+                      </path>
+                      <g transform="translate(0 7.847)">
+                        <g transform="translate(310.707 162.626)">
+                          <path
+                            d="M131.6,23.7V22h-5.1v9.9h5.1v-1.7h-3.2v-2.7h3.1v-1.7h-3.1v-2.2L131.6,23.7z M120,23.6h0.3c1,0,1.8,0.2,1.8,1.5s-0.7,1.5-1.8,1.5H120L120,23.6z M122,27.7c1.3-0.3,2.1-1.5,2-2.7c0-2.1-1.4-3-3.3-3h-2.6v9.9h1.9v-4h0l2.4,4h2.3L122,27.7z M113.1,28.3h-2.4l1.1-3.6h0L113.1,28.3z M113.6,29.8l0.8,2.1h2.1l-3.8-10.2h-1.5l-3.9,10.2h2l0.8-2.1H113.6z M105.8,22.3c-0.7-0.4-1.4-0.6-2.2-0.6c-2.9,0.2-5.1,2.7-4.9,5.6c0.2,2.6,2.2,4.7,4.8,4.9c0.8,0,1.6-0.2,2.2-0.6v-2.3c-0.6,0.6-1.4,1-2.2,1.1c-1.7-0.1-3-1.6-2.9-3.3c0,0,0,0,0,0c0-1.7,1.1-3.4,2.9-3.4c0.8,0,1.6,0.4,2.2,1.1L105.8,22.3zM86.3,25.9V22h-1.9v9.9h1.9v-4.4h3.6v4.4h1.9V22h-1.9v3.9H86.3z M80.6,23.7h2V22h-5.9v1.7h2v8.2h1.9L80.6,23.7z M74.9,22H73v9.9h1.9V22z M60.2,22h-2l3.2,10.1h1.4l1.9-6.5h0l2,6.5h1.4L71.4,22h-2l-1.9,6.8h0l-2.1-6.9h-1.1l-2,6.9h0L60.2,22z M51.9,23.7V22h-5.1v9.9h5.1v-1.7h-3.2v-2.7h3.1v-1.7h-3.1v-2.2L51.9,23.7z M42.4,22h-1.9v9.9h4.7v-1.7h-2.7L42.4,22z M32.8,23.7h0.3c2.2,0,3.3,1.1,3.3,3.3c0,2-0.9,3.3-3.3,3.3h-0.3V23.7z M30.9,31.9h2.8c2.7-0.1,4.9-2.4,4.8-5.1c-0.1-2.6-2.2-4.7-4.8-4.8h-2.8V31.9z M19.9,31.9h1.9v-6.7h0l5.2,6.9h1.4V22h-1.9v6.7h0l-5.2-6.9h-1.4L19.9,31.9z M14.9,28.3h-2.4l1.1-3.6h0L14.9,28.3zM15.4,29.8l0.8,2.1h2.1l-3.8-10.2H13L9.1,31.9h2l0.8-2.1H15.4z M1.9,25.9V22H0v9.9h1.9v-4.4h3.6v4.4h1.9V22H5.5v3.9H1.9z">
+                          </path>
+                          <path
+                            d="M131.4,0.4c-0.7-0.2-1.4-0.4-2.1-0.4c-2,0-6.5,1.1-6.5,7.8c0,5.1,2.8,7.6,6.1,7.6c0.8,0,1.7-0.2,2.4-0.5l0.2-4.2c-0.5,0.6-1.3,0.9-2.1,0.9c-2,0-2.5-2.2-2.5-3.9c0-1.6,0.5-3.9,2.6-3.9c0.7,0,1.4,0.3,1.9,0.9L131.4,0.4z M120.9,0.3h-4v14.9h4V0.3z M112.9,15.1V3.9h2.3V0.3h-8.5v3.6h2.2v11.2H112.9z M94.6,15.1h3.9v-4.4c0-1.4-0.2-2.8-0.3-4.2l0,0l3,8.6h3.9V0.3h-3.9V4c0,1.7,0.3,3.4,0.5,5.1l0,0l-3.2-9h-3.8L94.6,15.1z M84.7,15.1h7.5v-3.5h-3.5V9.4h3.1V5.8h-3.1V3.8h3.5V0.3h-7.5V15.1z M82.3,15.1V0.3h-4v5.3h-1.9V0.3h-4v14.9h4v-6h1.9v6H82.3z M68.4,15.1V3.9h2.3V0.3h-8.5v3.6h2.2v11.2H68.4z M56.7,0.3v9.4c0,0.4,0,0.9-0.1,1.3c-0.1,0.4-0.5,0.8-0.9,0.7c-0.4,0-0.8-0.3-0.9-0.7
+                c-0.1-0.4-0.1-0.9-0.1-1.3V0.3h-4V10c0,1.8,0.4,5.4,5,5.4s5.1-3.6,5.1-5.4V0.3L56.7,0.3z M42.7,10.1l0.6-3.5c0.2-0.9,0.3-1.9,0.4-2.8h0c0.1,0.9,0.2,1.9,0.3,2.8l0.4,3.5H42.7z M49.4,15.1L46.2,0.3h-4.9l-3.6,14.9h4.1l0.3-1.9h2.7l0.3,1.9H49.4z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div class="typing-container">
+                  <span class="typing">GENTLEMONSTER.COM</span><br>
+                  <span class="typing">HERONPRESTON.COM</span>
+                </div>
+              </div>
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_6.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_7.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_8.jpg">
+            </div>
+          </div>
+          <!-- //3 -->
+          <!-- 4 -->
+          <div class="herons__col flex__col">
+            <div class="heron">
+              <img src="img/heronpreston/hp_4.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_5.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_6.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_7.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_8.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_9.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_10.jpg">
+            </div>
+          </div>
+          <!-- //4 -->
+          <!-- 5 -->
+          <div class="herons__col flex__col">
+            <div class="heron">
+              <img src="img/heronpreston/hp_9.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_10.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_11.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_12.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_1.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_2.jpg">
+            </div>
+            <div class="heron">
+              <img src="img/heronpreston/hp_3.jpg">
+            </div>
+          </div>
+          <!-- //5 -->
+        </div>
+      </div>
+    </main>
+    <div class="noise"></div>
+    <!-- //gsap scrolltrigger gallery -->
+
+
+
+
+
+    <!-- 에어팟 -->
+
+    <main class="l-main bd-grid">
+      <section class="home">
+        <div class="home-data">
+          <h1 class="home-title">AirPods</h1>
+          <p class="home-description">AirPods give you an unrivaled wireless experience, now offering more hours
+            of talk time and a new <br> wireless charging case</p>
+        </div>
+
+        <div class="home-img">
+          <img src="https://i.postimg.cc/TwLjthhr/airpod1.png" alt="image" class="airpod1">
+          <img src="https://i.postimg.cc/d1b2pvTg/airpod2.png" alt="image" class="airpod2">
+        </div>
+
+        <div class="home-scroll">
+          <span class="home-scroll-text">Scroll down for more</span>
+          <a href="#l-section"><img src="https://i.postimg.cc/brPG1vnY/bx-mouse.png" alt="icon"
+              class="home-scroll-icon"></a>
+        </div>
+      </section>
+
+      <section class="l-section" id="l-section">
+        <div class="details">
+          <div class="details-content">
+            <div class="details-box">
+              <span class="details-initial">More than</span>
+              <h3 class="details-title">24 <span>h</span></h3>
+              <p class="details-description">battery with<br> the charging case</p>
+            </div>
+
+            <div class="details-box">
+              <span class="details-initial">Until</span>
+              <h3 class="details-title">5 <span>h</span></h3>
+              <p class="details-description">battery with<br> a single charge</p>
+            </div>
+
+            <div class="details-box">
+              <span class="details-initial">Only</span>
+              <h3 class="details-title">15 <span>min</span></h3>
+              <p class="details-description">charging is equivalent <br>to up to 3 hours of <br>audio</p>
+            </div>
+          </div>
+
+          <div class="details-img">
+            <img src="https://www.sanrio.co.jp/special/characterranking/2024/assets/img/results/chara_rank1.png"
+              alt="image" class="airpods">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- //에어팟 -->
+
+
+
+    <div class="story">
+      <!-- popular -->
+      <section class="recently section" id="recently">
+        <div class="recentily_container container grid">
+          <div class="recently_data">
+            <span class="section_subtitle">Recently Added</span>
+            <h2 class="section_title">
+              Sushi Samurai <br />
+              Salmon Cheese
+            </h2>
+            <p class="recently_description">
+              Take a look at what's new. And do not deprive yourself of a good
+              meal, enjoy and be happy.
+            </p>
+            <a href="#" class="button">Order now<i class="ri-arrow-right-line"></i></a>
+            <img src="img/spinach-leaf.png" alt="spinach-leaf" class="recently_data_img" />
+          </div>
+          <!-- recently_data -->
+          <img src="img/recently-salmon-sushi.png" alt="salmon-sushi" class="recently_img" />
+        </div>
+        <img src="img/leaf-branch-2.png" alt="left-branch" class="recently_left-1" />
+        <img src="img/leaf-branch-3.png" alt="left-branch" class="recently_left-2" />
+      </section>
+      <!-- recently -->
+
+    </div><!-- main end -->
+
+    <!-- issue -->
+    <section id="issue">
+      <div class="text_area">
+        <h2>芸能人着用アイテム</h2>
+      </div> <!-- text_area -->
+      <div class="pano_cont">
+        <div class="pano_wrap">
+          <ul class="list">
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736675973173_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736675996603_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736676340036_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736676027897_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736675973173_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736675996603_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736676340036_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://contents.sixshop.com/thumbnails/uploadedFiles/127833/product/image_1736676027897_1000.jpg"
+                  alt="2025 outfit">
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="controls">
+          <a href="#" class="paly_on active">
+            <i class="play fas fa-play-circle"><em>재생</em></i>
+            <i class="pause fas fa-pause-circle"><em>정지</em></i>
+          </a>
+        </div>
+        <div class="more">
+          <a href="#"><span>학생증 발급하기</span></a>
+        </div>
+      </div><!-- pano_wrap -->
+    </section>
+    <!-- //issue -->
+
+    <!-- footer -->
+    <footer>
+      <div class="foot_wrap">
+        <div class="foot_left">
+          <ul>
+            <li><strong>고객 서비스</strong></li>
+            <li><a href="#">문의</a></li>
+            <li><a href="#">배송</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">교환 및 반품</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">주문취소</a></li>
+            <li><a href="#">매장 픽업 서비스</a></li>
+            <li><a href="#">수리서비스 가이드</a></li>
+            <li><a href="#">제품 사용 가이드</a></li>
+            <li><a href="#">정품 인증</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><strong>법적 고지</strong></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">쿠키정책</a></li>
+            <li><a href="#">기프트카드 이용약관</a></li>
+          </ul>
+          <ul>
+            <li><strong>소셜미디어</strong></li>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">인스타그램</a></li>
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">트위터</a></li>
+            <li><a href="#">카카오톡</a></li>
+            <li><a href="#">핀터레스트</a></li>
+            <li><a href="#">위쳇</a></li>
+            <li><a href="#">웨이보</a></li>
+          </ul>
+        </div>
+        <div class="foot_right">
+          상호: 베이비메탈클럽 | 대표: 강지연,정예림 | 개인정보관리책임자: 강지연,정예림 | 전화: 070-8098-2297 | 이메일: babymetalclub@naver.com
+
+          주소: 서울 마포구 서교동 463-22 202호 | 사업자등록번호: 504-34-20070 | 통신판매: 제2020-서울노원-0758호 | 호스팅제공자: (주)식스샵
+
+          안전구매(에스크로) 서비스 가맹점이용약관 개인정보처리방침 사업자정보확인
+          <p>
+            © 2025 GENTLE MONSTER
+          </p>
+        </div>
+      </div><!-- //foot_wrap -->
+      <div class="m_foot_logo">
+
+      </div>
+    </footer>
+    <!-- //footer -->
+
+
+    <!-- 탑 버튼 -->
+    <div class="to_top">
+      <a href="#" title="탑으로이동">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    <!-- //탑 버튼 -->
+
+  </div> <!-- //wrap -->
+
+  <!-- scrollreveral -- Guide -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- 슬라이드 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+  <!-- //슬라이드 -->
+
+  <!--draggable_bg -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <!--//draggable_bg -->
+
+  <!--jquery CDN-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+
+  <!-- ScrollTrigger cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+  <!-- js파일 -->
+  <script src="js/main.js"></script>
+
+
+  <script>
+
+  </script>
+
 </body>
+
 </html>
+
+
+
+<!-- javascript:void(0) -->
