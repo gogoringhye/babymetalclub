@@ -117,21 +117,21 @@ li {
 /* 숫자 */
 #best_optical .rank ul li a span:nth-child(1) {
   width: 5%;
-  color: #fff;
+  color: #333;
 }
 
 /* 상품명 */
 #best_optical .rank ul li a span:nth-child(2) {
   width: 70%;
   font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
-  color: #fff;
+  color: #333;
 }
 
 /* 더보기 */
 #best_optical .rank ul li a span:nth-child(3) {
   width: 20%;
   text-align: right;
-  color: #fff;
+  color: #333;
   font-size: 0.8vw;
   font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
   transition: 0.2s;
