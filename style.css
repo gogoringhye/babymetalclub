@@ -27,7 +27,7 @@
 body {
   overflow: hidden;
   font-family: "SDGothicNeo";
-  background-color: #ffffffe4;
+  background-color: #171717;
   overflow-x: hidden;
 }
 
@@ -54,13 +54,35 @@ li {
   padding: 5vw;
 }
 
-#best_optical .principall {
+.poont {
+  position: relative;
+}
+
+#best_optical .lgimg {
   position: absolute;
-  width: 18vw;
-  bottom: 10vw;
-  left: 18.5vw;
+  width: 16vw;
+  bottom: 20vw;
+  left: 20vw;
   animation: skins 3s infinite;
 }
+
+@keyframes skins {
+  0% {
+    transform: translateY(0);
+    /* 처음 위치 */
+  }
+
+  50% {
+    transform: translateY(-10px);
+    /* 위로 10px 이동 */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* 원래 위치로 돌아옴 */
+  }
+}
+
 
 #best_optical .optical_best {
   display: flex;
@@ -75,8 +97,9 @@ li {
 }
 
 #best_optical .rank h3 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   line-height: 3.2vw;
+  color: #fff;
 }
 
 #best_optical .m_rank_h3 {
@@ -96,14 +119,14 @@ li {
 }
 
 #best_optical .rank ul li.active a span:nth-child(2) {
-  color: var(--Orange);
+  color: #666;
 }
 
 #best_optical .rank ul li>a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1.8vw 0vw;
+  padding: 3vw 0vw;
   box-sizing: border-box;
   font-size: 1vw;
   height: 2.3vw;
@@ -118,29 +141,27 @@ li {
 /* 숫자 */
 #best_optical .rank ul li a span:nth-child(1) {
   width: 5%;
-  color: #333;
+  color: #fff;
 }
 
 /* 상품명 */
 #best_optical .rank ul li a span:nth-child(2) {
   width: 70%;
   font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
-  color: #333;
+  color: #fff;
 }
 
 /* 더보기 */
 #best_optical .rank ul li a span:nth-child(3) {
   width: 20%;
   text-align: right;
-  color: #333;
+  color: #fff;
   font-size: 0.8vw;
   font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
   transition: 0.2s;
 }
 
-#best_optical .rank ul li:hover a span:nth-child(3) {
-  color: #ac804f;
-}
+#best_optical .rank ul li:hover a span:nth-child(3) {}
 
 #best_optical .rank ul li .rank_item {
   display: flex;
@@ -404,70 +425,6 @@ li {
   opacity: 0;
 }
 
-#issue .more {
-  position: absolute;
-  right: 6vw;
-  top: 5.8vw;
-  width: 10vw;
-  height: 2vw;
-}
-
-#issue .more a {
-  display: block;
-  color: white;
-  border-radius: 2em;
-  font-weight: 700;
-  width: 100%;
-  height: 2vw;
-}
-
-#issue .more a::before {
-  content: "";
-  position: absolute;
-  left: 0.1vw;
-  top: 0.1vw;
-  z-index: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  border: solid 1px #222;
-}
-
-#issue .more a span {
-  position: relative;
-  font-size: 0.8vw;
-  z-index: 1;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  background: #222;
-  transform: translate(0, 0);
-  transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-  font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
-}
-
-#issue .more:hover a span {
-  transform: translate(0.16vw, 0.1vw);
-}
-
-#issue .more a span::after {
-  content: "";
-  position: relative;
-  right: 0;
-  top: 0;
-  display: inline-block;
-  background: url(../img/news/btn-arr-white.png) no-repeat center;
-  background-size: contain;
-  width: 1.3vw;
-  height: 1.3vw;
-  margin-left: 0.5vw;
-}
-
 /* footer */
 
 .foot_wrap {
@@ -512,7 +469,7 @@ li {
 }
 
 .foot_left ul li a:hover {
-  color: var(--Orange);
+  color: #E681DE;
 }
 
 .foot_right {
@@ -723,15 +680,11 @@ input[type="reset"] {
 
 .nav-link {
   margin-right: 2vw;
-  color: var(--first-color);
-}
-
-.nav-link:hover {
-  color: var(--second-color);
+  color: #fff;
 }
 
 .nav-logo {
-  color: var(--first-color);
+  color: #fff;
   font-weight: 700;
 }
 
@@ -753,16 +706,20 @@ input[type="reset"] {
   font-weight: bold;
 }
 
+.nav-btn:hover {
+  color: var(--second-color);
+}
+
 /* //네비 */
 
 
 /* 타이핑 */
 .typing {
   position: relative;
-  top: 2vw;
-  left: 2vw;
-  color: #171717;
-  font-size: 2vw;
+  bottom: 10vw;
+  left: 15vw;
+  color: #fff;
+  font-size: 0.8vw;
   font-family: 'Poppins';
   font-weight: bold;
   display: inline-block;
@@ -795,33 +752,6 @@ input[type="reset"] {
 
 /* //타이핑 */
 
-/* button */
-.button {
-  display: inline-flex;
-  /* Flexbox 속성을 사용하여 자식 요소를 배치하면서 동시에 문장 내에서 다른 인라인 요소들과 같은 줄에 표시할 수 있다 */
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #171717;
-  padding: 1rem 1.5rem;
-  border-radius: 4rem;
-  color: #fff;
-  font-weight: var(--font-medium);
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: var(--first-color-alt);
-}
-
-.button i {
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-
-.button:hover i {
-  transform: translateX(0.25rem);
-}
-
 /* about */
 .about {
   position: relative;
@@ -837,6 +767,7 @@ input[type="reset"] {
 }
 
 .about_data {
+  color: #fff;
   margin-right: 20px;
 }
 
@@ -848,24 +779,6 @@ input[type="reset"] {
 
 .about_description {}
 
-.about_img {
-  position: absolute;
-  left: 70%;
-  top: 2%;
-  /*     transform: translate(10%,-30%);
- */
-  z-index: -1;
-  animation: skins 3s infinite;
-}
-
-.about_leaf {
-  width: 100px;
-  opacity: 0.2;
-  position: absolute;
-  right: -1.5rem;
-  bottom: 11rem;
-  transform: rotate(-15deg);
-}
 
 /* footer */
 .footer {
@@ -1175,31 +1088,6 @@ input[type="reset"] {
     font-size: 3.3vw;
   }
 
-  #issue .more {
-    right: 8vw;
-    width: 12vw;
-    height: 3vw;
-  }
-
-  #issue .more a {
-    height: 2.8vw;
-  }
-
-  #issue .more a span {
-    font-size: 1.2vw;
-  }
-
-  #issue .more a span::after {
-    width: 1.6vw;
-    height: 1.6vw;
-  }
-
-
-  #issue .more:hover a span {
-    height: 106%;
-    transform: translate(0.18vw, 0.2vw);
-  }
-
   #issue .pano_wrap .list li figure {
     width: 35vw;
   }
@@ -1269,22 +1157,6 @@ input[type="reset"] {
 
   #issue .controls a {
     font-size: 2.5vw;
-  }
-
-  #issue .more {
-    right: 7vw;
-    top: 5.8vw;
-    width: 12vw;
-    height: 2.3vw;
-  }
-
-  #issue .more a {
-    height: 2.3vw;
-
-  }
-
-  #issue .more:hover a span {
-    transform: translate(0.16vw, 0.2vw);
   }
 
   #issue .pano_wrap .list li figure img {
@@ -1363,10 +1235,6 @@ input[type="reset"] {
     position: relative;
   }
 
-  .m_more_btn {
-    display: block;
-  }
-
   #best_bold .men_best {
     display: none;
   }
@@ -1438,14 +1306,6 @@ input[type="reset"] {
     font-size: 2vw;
   }
 
-  #best_bold .m_more_btn {
-    position: absolute;
-    left: 72vw;
-    bottom: 30vw;
-  }
-
-
-
   /* #issue */
 
   #issue .pano_wrap .list li figure {
@@ -1466,16 +1326,6 @@ input[type="reset"] {
 
   #issue .controls a {
     font-size: 4vw;
-  }
-
-  #issue .more {
-    right: 8vw;
-    width: 17vw;
-    height: 3.3vw;
-  }
-
-  #issue .more a {
-    height: 3.2vw;
   }
 
   /* footer */
@@ -1625,10 +1475,6 @@ input[type="reset"] {
     font-size: 4.8vw;
   }
 
-  .m_more_btn {
-    display: none;
-  }
-
   /* #best_bold */
 
   #best_bold .m_men_best {
@@ -1722,23 +1568,6 @@ input[type="reset"] {
     padding-right: 0;
   }
 
-  #best_bold .m_more_btn {
-    display: block;
-    left: 67vw;
-    bottom: 4vw;
-  }
-
-  .m_more_btn span {
-    font-size: 4vw;
-  }
-
-  .m_arrow {
-    width: 26vw;
-  }
-
-
-
-
   /* #issue  */
   #issue {
     padding: 27vw 0vw 17vw 0vw;
@@ -1773,38 +1602,6 @@ input[type="reset"] {
 
   #issue .controls a {
     font-size: 6.5vw;
-  }
-
-
-
-  #issue .more {
-    right: 15vw;
-    top: 12.7vw;
-    width: 26vw;
-    height: 5.8vw;
-  }
-
-  #issue .more a {
-    height: 5.6vw;
-  }
-
-  #issue .more a::before {
-    border-radius: 4vw;
-  }
-
-  #issue .more a span {
-    font-size: 2.2vw;
-    border-radius: 4vw;
-  }
-
-  #issue .more a span::after {
-    width: 3.3vw;
-    height: 3.3vw;
-  }
-
-
-  #issue .more:hover a span {
-    transform: translate(0.16vw, 0.3vw);
   }
 
   /* foot  */
@@ -1857,21 +1654,14 @@ input[type="reset"] {
   }
 
   footer .foot_left ul li a:hover {
-    color: #f19601;
+    color: #E681DE;
   }
 
 
 }
 
 
-@media (max-width:320px) {
-  #issue .more {
-    top: 12.7vw;
-    width: 28vw;
-  }
-
-
-}
+@media (max-width:320px) {}
 
 @media (max-width: 767px) {
 
@@ -2110,88 +1900,118 @@ static(left, top값 적용 안됨)이 기본값이기 때문에*/
 }
 
 /* test */
-.hero{
-  display:flex;
-  align-items:center;
-  padding-bottom:300px;
- overflow: hidden;
-   overflow-x: hidden;
+.hero {
+  display: flex;
+  align-items: center;
+  padding-bottom: 300px;
+  overflow: hidden;
+  overflow-x: hidden;
 
 }
 
-.hero a{
-  color:white;
-  font-size:21px;
-  margin-top:15px;
-  display:inline-block;
-  padding:10px 15px;
-  border:1px solid white;
+.hero a {
+  color: white;
+  font-size: 21px;
+  margin-top: 1vw;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid white;
   text-decoration: none;
-}
-.hero h1{
-  color:white;
-  font-size:60px;
-}
-
-.left,.right{
-  width:50%;
-}
-.left {
-  padding-left:100px;
-}
-.right{
   position: relative;
-  height:100vh;
+  left: 0vw;
+  top: 2vw;
 }
 
-.right img{
-  position:absolute;
-  object-fit:contain;
-  height:20%;
-  transform:scale(0);
+.hero a:hover {
+  background-color: #E681DE;
 }
-.right img:first-child{
- height:80%;
-  top:20px;
-  right:20px:
+
+.hero h1 {
+  color: white;
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
 }
-.right img:nth-child(2){
- height:60%;
-  top: 20p%;
-  right:30%;
+
+.left,
+.right {
+  width: 50%;
 }
-.right img:nth-child(3){
- height:50%;
-  bottom:0%;
-  right:20%;
+
+.left {
+  position: relative;
+  bottom: 5vw;
+  padding-left: 1vw;
 }
-.text{
-  height:30vh;
+
+.left p {
+  color: #fff;
+  font-size: 0.8vw;
+}
+
+.right {
+  position: relative;
+  height: 100vh;
+}
+
+.right img {
+  position: absolute;
+  object-fit: contain;
+  height: 20%;
+  transform: scale(0);
+}
+
+.right img:first-child {
+  height: 70%;
+  top: 15%;
+  right: 10%;
+}
+
+.right img:nth-child(2) {
+  height: 60%;
+  top: 30%;
+  left: -20%;
+}
+
+.right img:nth-child(3) {
+  height: 60%;
+  bottom: 5%;
+  right: 40%;
+}
+
+.text {
+  height: 30vh;
   padding-left: 10%;
   display: flex;
   align-items: flex-end;
-  margin-bottom:80px;
-  color:white;
+  margin-bottom: 80px;
+  color: white;
 }
-.title{
-  font-size:48px;
-  color:#f5f5f5;
+
+.title {
+  position: relative;
+  right: 8vw;
+  font-size: 1.5vw;
+  color: #f5f5f5;
 }
-.title span{
-  font-weight:bold;
-  font-size:24px;
-  color:white
+
+.title span {
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: white
 }
-.sub-title{
-  font-size:21px;
-  width:80%;
+
+.sub-title {
+  font-size: 1.2vw;
+  width: 80%;
 }
+
 /* project 클래스 수정 */
 .project {
   height: 600px;
   width: 100%;
   display: flex;
-  margin-left: 100%; /* 애니메이션 시작 위치 */
+  margin-left: 100%;
+  /* 애니메이션 시작 위치 */
   position: relative;
   flex-wrap: nowrap;
 }
@@ -2229,15 +2049,3 @@ static(left, top값 적용 안됨)이 기본값이기 때문에*/
 
 
 /* //test */
-
-
-
-
-
-
-
-
-
-
-
-
