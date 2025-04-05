@@ -9,27 +9,11 @@
         @charset "UTF-8";
 
         @font-face {
-            font-family: 'GentleMonster';
+            font-family: 'Noto Sans KR';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
             font-display: swap;
-            src: url("https://www.gentlemonster.com/kr/assets/fonts/GM/GentleMonsterSerif-Regular.woff2") format("woff2"), url("https://www.gentlemonster.com/kr/assets/fonts/GM/GentleMonsterSerif-Regular.woff") format("woff");
-        }
-
-        @font-face {
-            font-family: "Unica77LLWeb";
-            src: url("https://www.gentlemonster.com/kr/assets/fonts/EN/Unica77LLWeb-Regular.woff2") format("woff2"),
-                url("https://www.gentlemonster.com/kr/assets/fonts/EN/Unica77LLWeb-Regular.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "SDGothicNeo";
-            src: url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff2") format("woff2"),
-                url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
+            src: url(https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.0.woff2) format('woff2');
         }
 
         * {
@@ -39,19 +23,24 @@
         }
 
         body {
-            background-color: #f5f6f7;
+            background-color: #171717;
         }
 
         #content {
             width: 450px;
             margin: 0 auto;
-            font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
         }
 
         /* header */
         #header {
             text-align: center;
             padding: 62px 0 20px;
+        }
+
+        #header a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
         }
 
         #header img {
@@ -69,6 +58,7 @@
             font-size: 14px;
             font-weight: 700;
             margin: 19px 0 8px;
+            color: #fff;
         }
 
         .box {
@@ -148,7 +138,7 @@
             border: none;
             font-size: 0.7vw;
             font-weight: 600;
-            font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif;
+            font-family: 'Noto Sans KR';
             padding: 10px 12px;
             cursor: pointer;
         }
@@ -166,7 +156,7 @@
 
         #btnJoin3 {
             border: 1px solid #222;
-            background-color: transparent;
+            background-color: #fff;
             padding: 0;
         }
     </style>
@@ -175,7 +165,7 @@
 <body>
     <div id="header">
         <a href="#">
-          베이비메탈클럽
+            Babymetalclub
         </a>
     </div>
 
