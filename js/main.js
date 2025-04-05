@@ -59,83 +59,7 @@ let horiz = gsap.to(slides, {
 /* //스크롤 슬라이드 */
 
 
-/* gsap scrolltrigger gallery */
-document.addEventListener("DOMContentLoaded", function () {
-  var heronsImg = document.querySelectorAll(".heron img");
 
-  heronsImg.forEach(function (heron, i) {
-    var imageUrl = "path/to/your/image" + (i + 1) + ".jpg";
-    var tempImage = new Image();
-    tempImage.src = imageUrl;
-
-    tempImage.onload = function () {
-      heron.src = imageUrl;
-      heron.parentElement.classList.add("loaded"); // 부모 요소에 클래스 추가
-    };
-  });
-
-  var TL = gsap.timeline({
-    scrollTrigger: {
-      trigger: "main",
-      pin: ".herons",
-      pinSpacing: false,
-      scrub: 2,
-      start: () => window.innerHeight + " bottom",
-      end: "bottom bottom",
-      invalidateOnRefresh: true,
-    },
-  });
-
-  TL.to(".herons__inner", {
-    rotate: 0
-  }, 0);
-  TL.fromTo(".herons .herons__col:nth-child(2n + 0)", {
-    y: "-0vh"
-  }, {
-    y: "50vh"
-  }, 0);
-  TL.fromTo(".herons .herons__col:nth-child(2n + 1)", {
-    y: "50vh"
-  }, {
-    y: "0vh"
-  }, 0);
-  TL.to(".heron", {
-    width: "50vw"
-  }, 0);
-  TL.fromTo(".heron img", {
-    scale: 2
-  }, {
-    scale: 1
-  }, 0);
-
-  var contentTL = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".preston",
-      scrub: 2,
-      start: () => window.innerHeight * 1 + " bottom",
-      end: "bottom bottom",
-      invalidateOnRefresh: true,
-    },
-  });
-  contentTL.fromTo(".preston", 1, {
-    borderRadius: "100%",
-    scale: 0
-  }, {
-    borderRadius: "0%",
-    scale: 1
-  });
-  contentTL.fromTo(".preston h1", 1, {
-    scale: 0
-  }, {
-    scale: 1
-  });
-  contentTL.fromTo(".preston p", 1, {
-    scale: 0
-  }, {
-    scale: 1
-  });
-});
-/* //gsap scrolltrigger gallery */
 
 
 
@@ -489,3 +413,32 @@ function setTyper(element, words) {
 }
 
 /* //타이핑 */
+
+/* test */
+gsap.utils.toArray(".scroll").forEach(function (section) {
+  var show = section.querySelector(".project");
+
+  gsap.to(show, {
+    marginLeft: 0, // 애니메이션으로 왼쪽으로 이동
+    duration: 1,
+    scrollTrigger: {
+      trigger: section,
+      scrub: 1,
+      pin: true,
+    },
+  });
+
+  gsap.to(".right > img", {
+    scale: 1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero",
+      scrub: 1,
+      pin: true,
+      end: "100px", // 원하는 종료 지점 조정
+    },
+  });
+});
+/* //test */
+
+
