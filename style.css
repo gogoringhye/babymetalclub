@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "SDGothicNeo";
-  src: url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff2") format("woff2"),
-    url("https://www.gentlemonster.com/kr/assets/fonts/KR/SDGothicNeoaTTF-eMd.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Noto Sans KR';
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.0.woff2) format('woff2');
 }
 
 /* font-family: "Unica77LLWeb", "SDGothicNeo", sans-serif; */
@@ -26,7 +26,7 @@
 
 body {
   overflow: hidden;
-  font-family: "SDGothicNeo";
+  font-family: 'Noto Sans KR';
   background-color: #171717;
   overflow-x: hidden;
 }
@@ -170,8 +170,9 @@ li {
 #best_optical .rank ul li .rank_item a {
   position: relative;
   display: block;
-  width: calc(100%/3);
+  width: 100%;
   margin: auto;
+  height: 20vh;
 }
 
 #best_optical .rank ul li .rank_item a::before {
