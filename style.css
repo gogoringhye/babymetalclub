@@ -1286,7 +1286,19 @@ input[type="reset"] {
 
 @media (max-width:768px) {
 
+  /* header */
+  .nav-link {
+    font-weight: lighter;
+  }
 
+  .nav-item {
+    margin-right: 2vw;
+  }
+
+  .nav-btn {
+    padding: 1vw 1vw;
+    font-weight: lighter;
+  }
 
   /* #best_optical  */
 
@@ -1303,45 +1315,132 @@ input[type="reset"] {
     font-size: 1.5vw;
   }
 
-  #best_optical .item .cell_big {
+  #best_optical .item {
     display: none;
   }
 
-  #best_optical .item .cell:nth-child(2) {
+  #best_optical .lgimg {
+    position: absolute;
+    width: 40vw;
+    top: 20vw;
+    left: 56vw;
+    animation: skins 3s infinite;
+  }
+
+  .typing {
+    position: relative;
+    bottom: 20vw;
+    left: 52vw;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'Poppins';
+    font-weight: bold;
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    overflow: hidden;
+  }
+
+  /* cslide */
+
+  .cslide h1 {
+    font-size: 3.5vw;
+  }
+
+  .cslide a {
+    left: 8vw;
+    top: 5vw;
+    font-size: 2vw;
+  }
+
+  .left {
+    padding-left: 5vw;
+  }
+
+  .left p {
+    font-size: 1.5vw;
+  }
+
+  .right img:first-child {
+    height: 50%;
+    top: 15%;
+    right: 10%;
+  }
+
+  .right img:nth-child(2) {
+    height: 40%;
+    top: 40%;
+    left: 2%;
+  }
+
+  .right img:nth-child(3) {
+    height: 40%;
+    bottom: 14%;
+    right: 10%;
+  }
+
+  .title {
+    font-size: 2.5vw;
+    right: 5vw;
+  }
+
+  .sub-title {
+    font-size: 2vw;
+    width: 100%;
+  }
+
+  .title span {
+    font-size: 2vw;
+  }
+
+  .project {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    margin-left: 100%;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .container {
+    display: contents;
+  }
+
+  .about_data {
+    margin: 5vw;
+  }
+
+  .section_subtitle {
     display: none;
   }
 
-  #best_optical .item .cell {
-    width: calc(100% /2);
+  .section_title.about_title {
+    font-size: 3vw;
+    margin-bottom: 10vw;
   }
 
-  #best_optical .item .cell .item_info h3 {
-    padding: 1vw 0vw 0vw 1.3vw;
-    font-size: 2.2vw;
+  .about_title div {
+    font-size: 2vw;
   }
 
-  #best_optical .item .cell .item_info ul {
-    padding-left: 1.5vw;
-    padding-top: 1vw;
+  .about_description {
+    font-size: 2vw;
+    text-align: end;
   }
 
-
-  #best_optical .item .cell .item_info ul li {
-    font-size: 1.8vw;
+  .slider-container {
+    max-width: 90%;
   }
 
-  #best_optical .item .cell .item_info ul li:nth-child(1)::before {
-    top: 1.2vw;
-  }
-
-  #best_optical .item .cell .box a:hover ul li:nth-child(1)::before {
-    width: 38%;
+  .title-of-slider {
+    padding: 0vw 6vw;
+    font-size: 0;
   }
 
   /* #issue */
 
   #issue .pano_wrap .list li figure {
-    width: 40vw;
+    width: 20vw;
   }
 
   #issue .pano_wrap .list li figure img {
@@ -1349,11 +1448,11 @@ input[type="reset"] {
   }
 
   #issue .text_area {
-    font-size: 1vw;
+    display: none;
   }
 
   #issue .controls {
-    top: 6vw;
+    display: none;
   }
 
   #issue .controls a {
@@ -1381,6 +1480,8 @@ input[type="reset"] {
     line-height: 3.3vw;
   }
 
+  footer .foot_left ul li a:hover {color: #fff;}
+
   footer .foot_left ul li:nth-child(1) {
     padding-bottom: 2.3vw;
     font-size: 2.3vw;
@@ -1388,9 +1489,9 @@ input[type="reset"] {
 
 
   footer .foot_right {
-    width: 100%;
-    text-align: center;
-    margin: 7vw 0vw;
+    width: 88%;
+    text-align: left;
+    margin: 4vw 3vw;
   }
 
 }
@@ -1457,8 +1558,8 @@ input[type="reset"] {
   }
 
   #best_optical .lgimg {
+    position: relative;
     width: 80vw;
-    bottom: -30vw;
     left: 10vw;
   }
 
@@ -1511,8 +1612,8 @@ input[type="reset"] {
     margin: 5vw;
   }
 
- .section_subtitle {
-   display: none;
+  .section_subtitle {
+    display: none;
   }
 
   .section_title.about_title {
@@ -1540,38 +1641,7 @@ input[type="reset"] {
 
   /* #issue  */
   #issue {
-    padding: 18vw 0vw 2vw 0vw;
     display: none;
-  }
-
-  #issue .text_area {
-    font-size: 2.5vw;
-    top: 11vw;
-  }
-
-  #issue .pano_wrap .list li {
-    width: auto;
-  }
-
-  #issue .pano_wrap .list li figure {
-    width: 30vw;
-  }
-
-  #issue .pano_wrap .list li figure img {
-    width: 100%;
-  }
-
-  #issue .pano_cont {
-    margin-top: 4vw;
-  }
-
-  #issue .controls {
-    right: 6vw;
-    top: 13vw;
-  }
-
-  #issue .controls a {
-    font-size: 6.5vw;
   }
 
   /* foot  */
@@ -1622,7 +1692,7 @@ input[type="reset"] {
   }
 
   footer .foot_left ul li a:hover {
-    color: #E681DE;
+    color: #fff;
   }
 
 }
