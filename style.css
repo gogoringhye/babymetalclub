@@ -468,7 +468,7 @@ li {
 }
 
 .foot_left ul li a:hover {
-  color: #E681DE;
+  color: #fff;
 }
 
 .foot_right {
@@ -1088,72 +1088,6 @@ input[type="reset"] {
 
 /* 반응형 */
 
-@media (max-width:1500px) {
-
-  /* header */
-
-  header.on .logo_bulldog {
-    width: 3.6vw;
-    margin-top: 0.4%;
-  }
-
-  header.on .logo_cover {
-    width: 13.2vw;
-  }
-
-
-  /* #best_optical */
-
-  .container {
-    width: 92vw;
-  }
-
-  #best_optical .rank ul li a {
-    font-size: 1vw;
-  }
-
-  #best_optical .rank ul li a span:nth-child(3) {
-    font-size: 0.9vw;
-  }
-
-  .item_info h3 {
-    font-size: 1vw;
-  }
-
-  #best_optical .item .cell .item_info ul li {
-    font-size: 0.9vw;
-  }
-
-  .item_info h3 {
-    font-size: 1vw;
-  }
-
-  #best_optical .item .cell .box a:hover .item_info {
-    height: 26%;
-  }
-
-
-  #best_optical .item .cell .item_info ul li:nth-child(1)::before {
-    top: 0.7vw;
-  }
-
-  #best_optical .item .cell .box a:hover ul li:nth-child(1)::before {
-    width: 46%;
-  }
-
-
-  /* #issue */
-
-  #issue .text_area {
-    font-size: 1vw;
-  }
-
-  /* footer  */
-  .foot_wrap {
-    font-size: 0.9vw;
-  }
-
-}
 
 
 @media (max-width:1024px) {
@@ -1284,7 +1218,7 @@ input[type="reset"] {
 }
 
 
-@media (max-width:780px) {
+@media (max-width:767px) {
 
   /* header */
   .nav-link {
@@ -1653,7 +1587,7 @@ input[type="reset"] {
   footer .foot_left ul li strong {
     font-size: 3.6vw;
     line-height: 6vw;
-    color: #222;
+    color: #666;
     border-bottom: 1px solid #f19601;
     padding-bottom: 1.2vw;
   }
