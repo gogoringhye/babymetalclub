@@ -1080,7 +1080,7 @@ input[type="reset"] {
   transform: translateY(-0.25rem);
 }
 
-/* 반응형 */
+
 
 
 
@@ -1178,47 +1178,7 @@ input[type="reset"] {
 
 
 
-
 @media (max-width:960px) {
-
-  /* #best_optical */
-
-  #best_optical .item .cell .box a:hover .item_info {
-    height: 33%;
-  }
-
-  #best_optical .item .cell .item_info ul li:nth-child(1)::before {
-    top: 0.8vw;
-  }
-
-
-  /* #issue */
-
-  #issue .text_area {
-    font-size: 1vw;
-  }
-
-  #issue .controls a {
-    font-size: 2.5vw;
-  }
-
-  #issue .pano_wrap .list li figure img {
-    width: 24vw;
-  }
-
-  footer .foot_left ul {
-    margin-right: 5%;
-  }
-
-
-  footer .foot_left ul li {
-    line-height: 1.6vw;
-  }
-
-}
-
-
-@media (max-width:767px) {
 
   /* header */
   .nav-link {
