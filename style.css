@@ -1284,7 +1284,7 @@ input[type="reset"] {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:780px) {
 
   /* header */
   .nav-link {
@@ -1439,24 +1439,8 @@ input[type="reset"] {
 
   /* #issue */
 
-  #issue .pano_wrap .list li figure {
-    width: 20vw;
-  }
-
-  #issue .pano_wrap .list li figure img {
-    width: 100%;
-  }
-
-  #issue .text_area {
+  #issue {
     display: none;
-  }
-
-  #issue .controls {
-    display: none;
-  }
-
-  #issue .controls a {
-    font-size: 4vw;
   }
 
   /* footer */
@@ -1480,7 +1464,9 @@ input[type="reset"] {
     line-height: 3.3vw;
   }
 
-  footer .foot_left ul li a:hover {color: #fff;}
+  footer .foot_left ul li a:hover {
+    color: #fff;
+  }
 
   footer .foot_left ul li:nth-child(1) {
     padding-bottom: 2.3vw;
