@@ -1169,20 +1169,10 @@ input[type="reset"] {
     width: 17vw;
   }
 
-
-  .t1 {
-    top: 3vw;
-  }
-
   /* best_optical */
 
   .container {
     width: 93vw;
-  }
-
-
-  .best_tit {
-    height: 7vw;
   }
 
   #best_optical .rank ul li a {
@@ -1423,20 +1413,6 @@ input[type="reset"] {
     padding-bottom: 14vw;
   }
 
-  .best_tit {
-    height: 14vw;
-    display: block;
-    margin-bottom: 20vw;
-  }
-
-  .best_tit h2 {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 0vw;
-    font-size: 6vw;
-  }
-
   #best_optical .optical_best {
     display: block;
   }
@@ -1475,6 +1451,18 @@ input[type="reset"] {
     display: none;
   }
 
+  #best_optical .lgimg {
+    width: 60vw;
+    bottom: -10vw;
+    left: 20vw;
+}
+
+.typing {
+  top: 50vw;
+  left: 8vw;
+  font-size: 3.8vw;
+}
+
   /* #issue  */
   #issue {
     padding: 27vw 0vw 17vw 0vw;
@@ -1506,7 +1494,6 @@ input[type="reset"] {
     top: 13vw;
   }
 
-
   #issue .controls a {
     font-size: 6.5vw;
   }
@@ -1515,8 +1502,6 @@ input[type="reset"] {
 
   .foot_wrap {
     display: block;
-    background: url(../img/footer/foot_bg.jpg) no-repeat center 0vw;
-    background-size: cover;
     padding-bottom: 33vw;
     mix-blend-mode: luminosity;
   }
@@ -1564,6 +1549,4 @@ input[type="reset"] {
     color: #E681DE;
   }
 
-
 }
-
