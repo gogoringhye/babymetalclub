@@ -342,8 +342,9 @@ li {
   position: absolute;
   left: 3vw;
   top: 5vw;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #fff;
 }
 
 #issue .pano_wrap {
@@ -1006,7 +1007,7 @@ input[type="reset"] {
   /* #issue */
 
   #issue .text_area {
-    font-size: 2.5vw;
+    font-size: 1vw;
   }
 
   /* footer  */
@@ -1080,7 +1081,7 @@ input[type="reset"] {
   /* #issue  */
 
   #issue .text_area {
-    font-size: 3vw;
+    font-size: 1vw;
   }
 
   #issue .controls a {
@@ -1151,7 +1152,7 @@ input[type="reset"] {
   /* #issue */
 
   #issue .text_area {
-    font-size: 3vw;
+    font-size: 1vw;
   }
 
   #issue .controls a {
@@ -1316,7 +1317,7 @@ input[type="reset"] {
   }
 
   #issue .text_area {
-    font-size: 3.3vw;
+    font-size: 1vw;
   }
 
   #issue .controls {
@@ -1573,7 +1574,7 @@ input[type="reset"] {
   }
 
   #issue .text_area {
-    font-size: 5.8vw;
+    font-size: 1vw;
     top: 11vw;
   }
 
