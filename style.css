@@ -1471,7 +1471,7 @@ input[type="reset"] {
 
   /* cslide */
   .left {
-   display: none;
+    display: none;
   }
 
   .right {
@@ -1509,8 +1509,24 @@ input[type="reset"] {
 
   .about_data {
     margin: 5vw;
-    text-align: left;
-    font-size: 2vw;
+  }
+
+ .section_subtitle {
+   display: none;
+  }
+
+  .section_title.about_title {
+    font-size: 5vw;
+    margin-bottom: 10vw;
+  }
+
+  .about_title div {
+    font-size: 5vw;
+  }
+
+  .about_description {
+    font-size: 3vw;
+    text-align: end;
   }
 
   .slider-container {
