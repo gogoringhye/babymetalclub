@@ -1452,6 +1452,10 @@ input[type="reset"] {
     display: none;
   }
 
+  .point {
+    height: 50vh;
+  }
+
   #best_optical .lgimg {
     width: 80vw;
     bottom: -30vw;
@@ -1459,8 +1463,8 @@ input[type="reset"] {
   }
 
   .typing {
-    top: 50vw;
-    left: 8vw;
+    top: 20vw;
+    left: 10vw;
     font-size: 3.8vw;
     padding-bottom: 10vw;
   }
@@ -1486,7 +1490,7 @@ input[type="reset"] {
     height: 40%;
     bottom: 18%;
     left: 30%;
-}
+  }
 
   .title {
     right: 5vw;
@@ -1535,10 +1539,11 @@ input[type="reset"] {
   /* #issue  */
   #issue {
     padding: 18vw 0vw 2vw 0vw;
+    display: none;
   }
 
   #issue .text_area {
-    font-size:2.5vw;
+    font-size: 2.5vw;
     top: 11vw;
   }
 
@@ -1571,8 +1576,8 @@ input[type="reset"] {
 
   .foot_wrap {
     display: block;
-    padding-bottom: 33vw;
     mix-blend-mode: luminosity;
+    border: none;
   }
 
   footer .foot_left {
